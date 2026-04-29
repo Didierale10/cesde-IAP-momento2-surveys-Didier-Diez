@@ -1,11 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contáctenos</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article>
+          <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required />
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" required />
+
+            <p>Rol:</p>
+            <label><input type="radio" name="rol" /> Estudiante</label>
+            <label><input type="radio" name="rol" /> Desarrollador</label>
+
+            <p>Temas:</p>
+            <label><input type="checkbox" /> Seguridad</label>
+            <label><input type="checkbox" /> Programación</label>
+
+            <label for="opcion">Motivo:</label>
+            <select id="opcion">
+              <option>Consulta</option>
+              <option>Soporte</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje"></textarea>
+
+            <br /><br />
+            <button type="submit">Enviar</button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Didier Diez - 2026 - Desarrollo de Software</p>
+      <p>Proyecto académico sin frameworks-2026 Momento 2</p>
+    </footer>
+  </body>
 </html>
